@@ -21,10 +21,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
         {/* preload the images */}
-        <link rel="preload" href="{ ${process.env.NODE_ENV === 'production' ? '/voices_of_bokamuso' : ''}/hero-bg.jpg" as="image" />
-        <link rel="preload" href="{ ${process.env.NODE_ENV === 'production' ? '/voices_of_bokamuso' : ''}/hero-bg2.jpg" as="image" />
-        <link rel="preload" href="{ ${process.env.NODE_ENV === 'production' ? '/voices_of_bokamuso' : ''}/hero-bg3.jpg" as="image" />
-        <link rel="preload" href="{ ${process.env.NODE_ENV === 'production' ? '/voices_of_bokamuso' : ''}/hero-bg4.jpg" as="image" />
+        <link rel="preload" href="/hero-bg.jpg" as="image" />
+        <link rel="preload" href="/hero-bg2.jpg" as="image" />
+        <link rel="preload" href="/hero-bg3.jpg" as="image" />
+        <link rel="preload" href="/hero-bg4.jpg" as="image" />
       
       </head>
       <body className={`font-sans`}>
