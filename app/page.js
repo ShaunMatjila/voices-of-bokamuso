@@ -378,7 +378,7 @@ export default function LandingPage() {
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Voices of Bokamoso is a fresh initiative established by passionate creators and cultural advocates. 
-                We&apos;re laying the foundation for meaningful connections through arts and traditions, 
+                We're laying the foundation for meaningful connections through arts and traditions, 
                 creating a platform where diverse voices can converge and inspire global understanding.
               </p>
 
@@ -477,7 +477,7 @@ export default function LandingPage() {
                 <DropdownSection>
                   <DropdownItem>Newest First</DropdownItem>
                   <DropdownItem>Most Popular</DropdownItem>
-                  <DropdownItem>Editor&apos;s Picks</DropdownItem>
+                  <DropdownItem>Editor's Picks</DropdownItem>
                 </DropdownSection>
               </DropdownMenu>
             </Dropdown>
