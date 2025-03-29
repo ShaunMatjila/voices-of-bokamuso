@@ -6,7 +6,7 @@ const nextConfig = {
     experimental: {
         allowedDevOrigins: ["192.168.3.14"],
     },
-    output: "export",
+    output: "standalone",
     trailingSlash: true,
 };
 
