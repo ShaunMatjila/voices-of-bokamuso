@@ -7,7 +7,7 @@ import { Image } from "@heroui/image";
 import {  Dropdown,  DropdownTrigger,  DropdownMenu,  DropdownSection,  DropdownItem } from "@heroui/dropdown";
 import { Input } from "@heroui/react";
 import { AnimatePresence, motion } from "framer-motion";
-
+import Link from 'next/link';
 
 const scrollButtonVariants = {
   animate: {
@@ -20,7 +20,7 @@ const scrollButtonVariants = {
   }
 };
 
-export default function Hero() {
+export default function LandingPage() {
   const [navbarBg, setNavbarBg] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Add state for mobile menu
@@ -49,7 +49,7 @@ export default function Hero() {
 
   const slides = [
     {
-      image: "/hero-bg.jpg",
+      image: "/hero-bg1.jpg",
       title: "Traditional Dances of the World",
       description:
         "Experience the rhythm and elegance of traditional dances passed down through generations, celebrating the rich cultural heritage of diverse communities across the globe.",
@@ -116,7 +116,7 @@ export default function Hero() {
                 navbarBg ? "text-black" : "text-white"
               }`}
             >
-              Voices of Bokamuso
+              Voices of Bokamoso
             </a>
           </div>
 
@@ -146,22 +146,22 @@ export default function Hero() {
 
           {/* Auth Buttons - hidden on mobile */}
           <div className="hidden md:flex items-center space-x-4">
-            <a
+            <Link
               className={`py-2 px-4 border text-sm font-semibold text-center rounded-lg ${
                 navbarBg ? "border-black text-black" : "border-white text-white"
               } hover:bg-white/10 transition-colors`}
-              href="#"
+              href="/auth/signin"
             >
               Sign In
-            </a>
-            <a
+            </Link>
+            <Link
               className={`py-2 px-4 border text-sm font-semibold text-center rounded-lg ${
                 navbarBg ? "border-black text-black" : "border-white text-white"
               } hover:bg-white/10 transition-colors`}
               href="#"
             >
               Sign Up
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -238,17 +238,17 @@ export default function Hero() {
           ))}
           <div className="pt-4 pb-2 border-t border-gray-700">
             <div className="flex items-center px-5 space-x-4">
-              <a
+              <Link
                 className={`w-full px-4 py-2 border text-center rounded-md text-sm font-medium ${
                   navbarBg
                     ? "border-gray-800 text-gray-800 hover:bg-gray-100"
                     : "border-white text-white hover:bg-white/10"
                 }`}
-                href="#"
+                href="/auth/signin"
               >
                 Sign In
-              </a>
-              <a
+              </Link>
+              <Link
                 className={`w-full px-4 py-2 border text-center rounded-md text-sm font-medium ${
                   navbarBg
                     ? "border-gray-800 text-gray-800 hover:bg-gray-100"
@@ -257,7 +257,7 @@ export default function Hero() {
                 href="#"
               >
                 Sign Up
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -377,7 +377,7 @@ export default function Hero() {
                 Building Bridges Through Cultural Exchange
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Voices of Bokamuso is a fresh initiative established by passionate creators and cultural advocates. 
+                Voices of Bokamoso is a fresh initiative established by passionate creators and cultural advocates. 
                 We&apos;re laying the foundation for meaningful connections through arts and traditions, 
                 creating a platform where diverse voices can converge and inspire global understanding.
               </p>
@@ -513,7 +513,7 @@ export default function Hero() {
                       className="text-black hover:bg-gray-100 flex items-center gap-2"
                     >
                       Read More
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right-icon lucide-chevron-right">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right-icon lucide-chevron-right">
                         <path d="m9 18 6-6-6-6"/>
                       </svg>
                     </Button>
@@ -626,11 +626,11 @@ export default function Hero() {
             {/* Company Info */}
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-gray-100">
-                Voices of Bokamuso
+                Voices of Bokamoso
               </h3>
               <p className="text-gray-400 text-sm">
                 {/* Connecting the world through cultural exchange and artistic expression. */}
-                Founded in 2024, Voices of Bokamuso is a global platform dedicated to preserving cultural heritage 
+                Founded in 2024, Voices of Bokamoso is a global platform dedicated to preserving cultural heritage 
                 while fostering modern artistic expression. 
                 {/* <br />
                 We bridge traditional and contemporary through 
@@ -711,7 +711,7 @@ export default function Hero() {
           {/* Copyright */}
           <div className="mt-12 pt-8 border-t border-gray-800 text-center">
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Voices Of Bokamuso. All rights reserved.
+              © {new Date().getFullYear()} Voices Of Bokamoso. All rights reserved.
             </p>
           </div>
         </div>
