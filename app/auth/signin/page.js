@@ -160,7 +160,7 @@ export default function SignInPage() {
         </Form>
 
         <p className="text-gray-600 text-center">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <a href="/auth/signup" className="text-blue-600 font-semibold hover:underline">
             Sign Up
           </a>
