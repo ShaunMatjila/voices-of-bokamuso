@@ -1,11 +1,13 @@
 {
   "name": "voices_of_bokamuso",
   "version": "0.1.0",
+  "description": "Voices of Bokamuso is a platform that connects people with the power of storytelling, allowing them to share their experiences and insights through audio narratives.",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "lint": "next lint"
   },
   "dependencies": {
